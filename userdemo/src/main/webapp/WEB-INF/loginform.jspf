@@ -1,0 +1,34 @@
+		<form name="f" class="form-horizontal" action="<c:url value='j_spring_security_check'/>" method="POST">
+			<legend>Login</legend>
+
+			<c:if test="${not empty errmsg}">
+			<div class="alert alert-error">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>Error!</strong> ${errmsg}
+			</div>
+            </c:if>
+            
+			<div class="control-group">
+				<!-- Username -->
+				<label class="control-label" for="username">User name</label>
+				<div class="controls">
+					<input type="text" id="user_id" name="j_username" placeholder="User name"
+						class="input-middle" required>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<!-- Password-->
+				<label class="control-label" for="password">Password</label>
+				<div class="controls">
+					<input type="password" id="password" name="j_password" placeholder="Password"
+						class="input-middle" required>
+				</div>
+			</div>
+
+ 			<div class="control-group">
+                 <div class="controls">
+                   <button class="btn btn-success">Login</button> or <a href="#" onclick="location.href='signup'">Register account</a>
+                 </div>
+            </div>
+		</form>
