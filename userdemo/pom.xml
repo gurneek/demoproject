@@ -50,6 +50,8 @@
         <version>3.0.1</version>
         <scope>provided</scope>
 </dependency>
+
+     
          <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
@@ -100,6 +102,21 @@
    	<groupId>net.ftlines.wicket-bean-validation</groupId>
    	<artifactId>core</artifactId>
    	<version>1.0</version>
+   </dependency>
+   <dependency>
+   	<groupId>org.hibernate</groupId>
+   	<artifactId>hibernate-validator</artifactId>
+   	<version>4.2.0.Final</version>
+   </dependency>
+   <dependency>
+   	<groupId>org.springframework</groupId>
+   	<artifactId>spring-jdbc</artifactId>
+   	<version>3.2.4.RELEASE</version>
+   </dependency>
+   <dependency>
+   	<groupId>org.jasig.springframework</groupId>
+   	<artifactId>spring-webmvc-portlet-contrib</artifactId>
+   	<version>1.0.0</version>
    </dependency>
   </dependencies>
   <build>
